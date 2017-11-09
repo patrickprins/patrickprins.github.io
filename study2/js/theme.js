@@ -4,7 +4,8 @@ simpleCart({
       url: "p.s.prins2@students.uu.nl"
     },
     
-    cartStyle: 'table'
+    cartStyle: "table"
+    currency: "EUR"
     
     cartColumns: [
     { view: "image" , attr: "thumb" , label: false }
