@@ -1294,8 +1294,8 @@
 						opt_input = opts || {},
 						_opts = simpleCart.extend(simpleCart.extend({
 							  symbol:		"€"
-							, decimal:		","
-							, delimiter:	"."
+							, decimal:		"."
+							, delimiter:	","
 							, accuracy:		2
 							, after: false
 						}, simpleCart.currency()), opt_input),
