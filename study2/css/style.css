@@ -3412,8 +3412,20 @@ td.invert-image a img {
 .simpleCart_items table th{
     margin: 0;
     padding: 1px 30px;
+    border: 1px solid black;
     }
-    
-    
+
+.winkelwagentabel table{
+    width: auto;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+    }
+table, th, td{
+    margin: 0;
+    padding: 1px 30px;
+    border: 1px solid black;
+    }   
     
 }

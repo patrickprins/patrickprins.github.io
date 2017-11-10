@@ -60,7 +60,7 @@
 				_HTML_		= 'html',
 				_CLICK_		= 'click',
 
-				// Currencies
+				// CurrenCurrencies
 				currencies = {
 					"USD": { code: "USD", symbol: "&#36;", name: "US Dollar" },
 					"AUD": { code: "AUD", symbol: "&#36;", name: "Australian Dollar" },
@@ -93,13 +93,13 @@
 
 					cartStyle				: "div",
 					cartColumns			: [
-						{ attr: "name", label: "Name" },
-						{ attr: "price", label: "Price", view: 'currency' },
+						{ attr: "name", label: "Product" },
+						{ attr: "price", label: "Prijs", view: 'currency' },
 						{ view: "decrement", label: false },
-						{ attr: "quantity", label: "Qty" },
+						{ attr: "quantity", label: "Aantal" },
 						{ view: "increment", label: false },
-						{ attr: "total", label: "SubTotal", view: 'currency' },
-						{ view: "remove", text: "Remove", label: false }
+						{ attr: "total", label: "Bedrag", view: 'currency' },
+						{ view: "remove", text: "Verwijder product", label: false }
 					],
 
 					excludeFromCheckout	: ['thumb'],
@@ -1293,9 +1293,9 @@
 					var num = parseFloat(number),
 						opt_input = opts || {},
 						_opts = simpleCart.extend(simpleCart.extend({
-							  symbol:		"$"
-							, decimal:		"."
-							, delimiter:	","
+							  symbol:		"€"
+							, decimal:		","
+							, delimiter:	"."
 							, accuracy:		2
 							, after: false
 						}, simpleCart.currency()), opt_input),
