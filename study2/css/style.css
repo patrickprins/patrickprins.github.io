@@ -3391,10 +3391,29 @@ td.invert-image a img {
     font-size: 13px;
 }
 .simpleCart_items table {
-        width: auto;
-        margin-top: 60px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
+    width: auto;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     }
+.simpleCart_items table .item-decrement,
+.simpleCart_items table .item-increment{
+    width: 20px;
+    }
+.simpleCart_items table .item-decrement a,
+.simpleCart_items table .item-increment a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    }
+.simpleCart_items table td,
+.simpleCart_items table th{
+    margin: 0;
+    padding: 1px 30px;
+    }
+    
+    
+    
 }
