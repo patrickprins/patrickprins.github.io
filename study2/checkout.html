@@ -28,14 +28,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- simplecart -->
 <script src="js/simpleCart.js"></script>
 <script src="js/theme.js"></script>
-    <script>
-	simpleCart({
-		checkout: {
-        cartStyle: "table"
-		},
-		currency: "EUR"
-	});
-    </script>
     
 <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
@@ -61,20 +53,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>ik ben geüpdatet <a href="products.html">SHOP NOW</a></p>
 			</div>
 			<div class="agile-login">
-				<ul>
-					<li><a href="registered.html"> Create Account </a></li>
-					<li><a href="login.html">Login</a></li>
-					<li><a href="contact.html">Help</a></li>
+				<ul>>
+					<li><a href="faq.html">Help</a></li>
 					
 				</ul>
 			</div>
-			<div class="product_list_header">  
-					<form action="#" method="post" class="last"> 
-						<input type="hidden" name="cmd" value="_cart">
-						<input type="hidden" name="display" value="1">
-						<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-					</form>  
-			</div>
+			
+          
+           <!--Winkelwagentje in header-->
+            <div class="product_list_header">
+                <a href="checkout.html">
+                <div class="w3view-cart">
+                    <button class="w3view-cart"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button> 
+                </div>
+                 
+                <div class="winkelwagentekst">
+                
+                <p><span class="simpleCart_quantity" class="hyperlinkoranje"></span> producten</p>
+                <span class="simpleCart_total"></span>
+            </div>
+                </a>
+            </div>
+  
+ 
+            
 			<div class="clearfix"> </div>
 		</div>
 	</div>
@@ -88,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left">
-				<h1><a href="index.html">super Market</a></h1>
+				<h1><a href="index.html">Click&Eat</a></h1>
 			</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -243,23 +245,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h1>WINKELWAGEN</h1><br>           
             
-            <a href="checkout.html">
-            <div class="cart">
-                <p><span class="simpleCart_quantity"></span> producten</p>
-                <span class="simpleCart_total"></span>
-            </div>
-            </a>
+
             
             <br>
             
-            <div class="simpleCart_items" class="winkelwagentabel"></div>
+            <div class="simpleCart_items" class="winkelwagentabel" style="margin: 0px;"></div>
             <div class="cartTotal">
                 <div class="simpleCart_total"></div>
                 </div>
-         </div>
-        
-         <a href="javascript:;" class="simpleCart_checkout"></a>       
-                
+                     <br><a href="javascript:;" class="simpleCart_checkout">Afrekenen</a> 
+         </div>                     
     </div>
 
 

@@ -59,9 +59,15 @@ i.badge.badge-notify.my-cart-badge {
     top: -10px;
     right:-22px;
 }
+
+.product_list_header {
+    color: #fe9126;
+    font-size: 0.7em;
+}
+
 .product_list_header span {
-    font-size: 1em;
-    color: #fff;
+    font-size: 0.9em;
+    color: #fe9126;
 	top: 1em;
 }
 input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input[type="reset"],.agileinfo_mail_grid_left ul li a,.events_bottom_left2 ul li a,.w3ls_service_grids1_right a,ul.agileits_social_icons li a,.w3l_banner_nav_right_banner_pet a,.w3ls_w3l_banner_nav_right_grid_head_grid ul li a,.products-breadcrumb ul li a,.w3_footer_grid ul li a,.w3l_fresh_vegetables_grid ul li a,.wthree_footer_copy p a,.agile_top_brand_left_grid1 .button,.w3ls_logo_products_left1 ul.special_items li a,.w3ls_logo_products_left1 ul.phone_email li a{
@@ -127,7 +133,7 @@ button.btn.btn-default.search:hover {
 }
 .agile-login {
     float: left;
-    width: 40%;
+    width: 10%;
     text-align: center;
     padding: 9px 0;
 }
@@ -176,10 +182,23 @@ button.w3l_search {
 button.w3view-cart {
     background: transparent;
     border: none;
+    color:#fe9126;
+    float: right;
+    padding-top: 7px;
+
 }
 button.w3view-cart:focus{
-	outline:none;
+    float: right;
+    color:#fe9126;
 }
+
+.winkelwagentekst{
+    text-align: right;
+    color:#fe9126;  
+    float: left;
+
+}
+
 .logo_products {
     padding: 2em 0;
 }
@@ -303,22 +322,20 @@ ul.multi-column-dropdown h6 {
 /*-- cart --*/
 /*-- cart-box --*/ 
 .w3view-cart {
-    background: #3399cc;
     border: none;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	-ms-border-radius: 50%;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    text-align: center;
+    border-radius: 0%;
+    width: 110px;
+    height: 7px;
+    text-align: right;
     outline: none;
 }
 .w3view-cart i.fa {
     font-size: 24px;
     color: #ffffff;
-    vertical-align: middle;
 }
 /*-- //cart-box --*/
 /*-- top-brands --*/
@@ -386,6 +403,7 @@ ul.multi-column-dropdown h6 {
 /*-- cart --*/
 .product_list_header {
     float: right;
+
 }
 .snipcart-details {
     text-align: center;
@@ -3415,7 +3433,7 @@ td.invert-image a img {
     border: 1px solid black;
     }
 
-.winkelwagentabel table{
+.winkelwagentabel{
     width: auto;
     margin-top: 60px;
     margin-left: auto;
@@ -3427,5 +3445,8 @@ table, th, td{
     padding: 1px 30px;
     border: 1px solid black;
     }   
+.checkout .container .cart {
+        border: 2px solid black;
+    }
     
 }

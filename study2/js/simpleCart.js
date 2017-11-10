@@ -93,6 +93,7 @@
 
 					cartStyle				: "div",
 					cartColumns			: [
+                        { view: "image", attr: "thumb", label: false},
 						{ attr: "name", label: "Product" },
 						{ attr: "price", label: "Prijs", view: 'currency' },
 						{ view: "decrement", label: false },
