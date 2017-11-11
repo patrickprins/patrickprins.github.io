@@ -97,11 +97,11 @@ input[type="submit"],#PPMiniCart .minicart-submit,.w3ls_vegetables ul li a,input
 .w3l_search {
     float: right;
     width: 25.33%;
-    margin: 0em 0 0em 0em;
+    margin: 0.5em 0 0em 0em;
 }
 .w3l_search input[type="search"] {
     width: 83%;
-    padding:10px;
+    padding: 10px;
     font-size: 14px;
     color: #999;
     outline: none;
@@ -888,6 +888,7 @@ a.w3_agile_vimeo:hover{
 .payment-w3ls {
     float: right;
 }
+
 .footer-botm {
     background: #393737;
     padding: 16px 0;
