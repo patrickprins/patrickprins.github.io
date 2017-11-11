@@ -31,6 +31,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
+    
+<!-- simplecart -->
+<script src="js/simpleCart.js"></script>
+<script src="js/theme.js"></script>
+    
 <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
@@ -59,39 +64,42 @@ data-config="{'skin':'skins/tunes/skin.css','volume':80,'autoplay':true,'shuffle
 	<div class="agileits_header">
 		<div class="container">
 			<div class="w3l_offers">
-				<p>TUSSEN 6 EN 21 UUR BESTELD, DIRECT THUISBEZORGD. <a href="products.html">SHOP NU</a></p>
+				<p>HET EXPERIMENT IS NU BEZIG!</p>
 			</div>
 			<div class="agile-login">
-				<ul>
-					<!-- <li><a href="registered.html"> Create Account </a></li>
-					<li><a href="login.html">Login</a></li> -->
+				<ul>>
 					<li><a href="faq.html">Help</a></li>
 					
 				</ul>
 			</div>
-			<div class="product_list_header">  
-					<form action="#" method="post" class="last"> 
-						<input type="hidden" name="cmd" value="_cart">
-						<input type="hidden" name="display" value="1">
-						<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
-					</form>  
-			</div>
+			
+          
+           <!--Winkelwagentje in header-->
+            <div class="product_list_header">
+                <a href="checkout.html">
+                <div class="w3view-cart">
+                    <button class="w3view-cart"><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button> 
+                </div>
+                 
+                <div class="winkelwagentekst">
+                
+                <p><span class="simpleCart_quantity" class="hyperlinkoranje"></span> producten</p>
+                <span class="simpleCart_total"></span>
+            </div>
+                </a>
+            </div>
+  
+ 
+            
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 
 	<div class="logo_products">
 		<div class="container">
-		<div class="w3ls_logo_products_left1">
-			<!--	<ul class="phone_email">
-					<li><i class="fa fa-phone" aria-hidden="true"></i>Order online or call us : (+0123) 234 567</li>
-					
-				</ul> -->
-			</div>
+		<div class="w3ls_logo_products_left1"></div>
 			<div class="w3ls_logo_products_left">
-				<h1>
 				<a href="index.html"><img src="images/logo.png"></a>
-				</h1>
 			</div>
 		<div class="w3l_search">
 			<form action="#" method="post">
@@ -1179,26 +1187,25 @@ data-config="{'skin':'skins/tunes/skin.css','volume':80,'autoplay':true,'shuffle
 		<div class="container">
 			<div class="w3_footer_grids">
 				<div class="col-md-3 w3_footer_grid">
-					<h3>Contact</h3>
-					
+					<h3><img src="images/logo_footer.png"></h3>
 					<ul class="address">
-						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Voedselplein 12, <span>Amersfoort</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:p.s.prins2@students.uu.nl">info@clickandeat.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>033 765 4321</li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
-					<h3>Information</h3>
-					<ul class="info"> 
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">About Us</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact Us</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">FAQ's</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Special Products</a></li>
+					<h3>Informatie</h3>
+					<ul class="info">
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">Over ons</a></li>
+                        <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">Vaakgestelde vragen</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact</a></li>
+						<!-- <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a></li> -->
+						<!-- <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Special Products</a></li> -->
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
-					<h3>Category</h3>
+					<h3>Categorieën</h3>
 					<ul class="info"> 
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Groceries</a></li>
 						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Household</a></li>
@@ -1208,13 +1215,15 @@ data-config="{'skin':'skins/tunes/skin.css','volume':80,'autoplay':true,'shuffle
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">
-					<h3>Profile</h3>
+					<h3>Profiel</h3>
 					<ul class="info"> 
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Store</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">My Cart</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Login</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Create Account</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Winkel</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="checkout.html">Winkelwagen</a></li>
+						<!-- <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="login.html">Login</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="registered.html">Create Account</a></li> -->
 					</ul>
+					
+					
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -1223,7 +1232,7 @@ data-config="{'skin':'skins/tunes/skin.css','volume':80,'autoplay':true,'shuffle
 		<div class="footer-copy">
 			
 			<div class="container">
-				<p>© 2017 Super Market. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>© 2017 Click&Eat.</p>
 			</div>
 		</div>
 		
@@ -1234,8 +1243,8 @@ data-config="{'skin':'skins/tunes/skin.css','volume':80,'autoplay':true,'shuffle
 					<ul>
 						<li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 						<li><a href="#" class="agile_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-						<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_dribble"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="w3_agile_vimeo"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<div class="payment-w3ls">	
