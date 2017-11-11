@@ -2243,9 +2243,63 @@ pre code {
     margin-left: 0;
   }
 }
+
+-----------------------------------
+
 table {
-  background-color: transparent;
+    background-color: transparent;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+
+.simpleCart-items table{
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-thumb img{
+    width: 50px;
+    height: 50px;
+}
+
+.simpleCart_items table .item-name{
+    width: 100px;
+    
+    }
+
+.simpleCart_items table .item-decrement,
+.simpleCart_items table .item-increment{
+    width: 3px;
+    }
+.simpleCart_items table .item-decrement a,
+.simpleCart_items table .item-increment a{
+    display: block;
+    width: 3px;
+    }
+
+.winkelwagentabel{
+    width: auto;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+    }
+table, th, td{
+    margin: 0;
+    padding: 1px 20px;
+    }   
+
+.cartTotal{
+    font-weight: bold;
+}
+
+-----------------------
+
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -2253,7 +2307,7 @@ caption {
   text-align: left;
 }
 th {
-  text-align: left;
+  text-align: center;
 }
 .table {
   width: 100%;
@@ -2267,7 +2321,7 @@ th {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.42857143;
+  line-height: 2;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }

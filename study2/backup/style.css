@@ -1093,6 +1093,10 @@ a.w3_agile_vimeo:hover{
 .checkout h2 span{
 	color:#3399cc;
 }
+table.timetable_sub {
+	width:100%;
+	margin:0 auto;
+}
 .timetable_sub thead {
     background: #004284;
 }
@@ -3400,5 +3404,45 @@ td.invert-image a img {
 .w3agile_description p {
     font-size: 13px;
 }
+.simpleCart_items, table{
+    width: 100%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    }
+.simpleCart_items table .item-decrement,
+.simpleCart_items table .item-increment{
+    width: 20px;
+    }
+.simpleCart_items table .item-decrement a,
+.simpleCart_items table .item-increment a{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    }
+.simpleCart_items table td,
+.simpleCart_items table th{
+    margin: 0;
+    padding: 1px 30px;
+    border: 1px solid black;
+    }
 
+.winkelwagentabel{
+    width: auto;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+    }
+table, th, td{
+    margin: 0;
+    padding: 1px 30px;
+    border: 1px solid black;
+    }   
+.checkout .container .cart {
+        border: 2px solid black;
+    }
+    
 }
