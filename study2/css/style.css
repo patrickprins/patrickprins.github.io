@@ -2551,6 +2551,7 @@ ul.phone_email li {
 .w3ls_logo_products_left1 {
     margin-top: 0;
     width: 38%;
+    float: right;
 }
 .w3l_search {
     width: 27%;

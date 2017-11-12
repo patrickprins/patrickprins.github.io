@@ -1,7 +1,13 @@
 simpleCart({
     checkout: {
       type: "SendForm",
-      url: "p.s.prins2@students.uu.nl"
+      url: "p.s.prins2@students.uu.nl",
+      method: "POST",
+      success: "https://patrickprins.github.io/einde-studie2.html",
+        extra_data: {
+        storename: "study2"
+    }
+    
     },
     
     cartStyle: "table",
