@@ -2,7 +2,7 @@ simpleCart({
     checkout: {
       type: "SendForm",
       email: "p.s.prins2@students.uu.nl",
-      method: "GET",
+      method: "POST",
       success: "https://patrickprins.github.io/einde-studie2.html",
         extra_data: {
         storename: "study2"
