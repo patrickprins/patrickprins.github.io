@@ -1,9 +1,3 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
 html, body{
     font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
@@ -16,10 +10,11 @@ p{
 	margin:0;
 }
 h1,h2,h3,h4,h5,h6,a{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin:0;
 	font-weight:700;
 }
+
 ul,label{
 	margin:0;
 	padding:0;
@@ -43,6 +38,8 @@ span.glyphicon.glyphicon-shopping-cart.my-cart-icon.my-cart-icon-affix {
 .snipcart-thumb a {
     display: block;
     text-align: center;
+    padding: 1.5em;
+    float: center;
 }
 .my-cart-icon-affix i {
     background: #fe9126 !important;
@@ -384,10 +381,11 @@ ul.multi-column-dropdown h6 {
 	color:#212121;
 	margin:1.5em 0 1em;
 	line-height:1.5em;
-	text-transform:capitalize;
-	font-size:14px;
+	font-size:15px;
+    font-weight: bold;
 	text-align: center;
 }
+
 .agile_top_brand_left_grid1 h4,.agileinfo_single_right_snipcart h4{
 	font-weight:600;
 	font-size:1em;
@@ -764,12 +762,12 @@ i.gray-star {
     margin:0 6px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #029241;
+    background-color: #bf6c00;
     border: none;
     border-radius: 10px;
 }
 .carousel-indicators .active {
-    background-color: #FAB005;
+    background-color: #fe9126;
     margin: 0 6px;
 }
 /*-- footer --*/
