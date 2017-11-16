@@ -1,17 +1,24 @@
+simpleCart.currency({
+    code: "ERO" ,
+    name: "Euro met decimaal" ,
+    symbol: " €" ,
+    delimiter: " " , 
+    decimal: "," , 
+    after: false ,
+    accuracy: 2
+});
+
 simpleCart({
     checkout: {
-      type: "SendForm",
-      email: "p.s.prins2@students.uu.nl",
-      method: "POST",
-      success: "https://patrickprins.github.io/einde-studie2.html",
-        extra_data: {
-        storename: "study2"
-    }
-    
+        type: "SendForm",
+        url: "sendcart.php" ,
+        method: "POST" , 
+        success: "patrickprins.nl/outro2.html" , 
+        cancel: "patrickprins.nl/checkout.html" 
     },
     
     cartStyle: "table",
-    currency: "EUR",
+    currency: "ERO",
     
     cartColumns	: [
                 { view: "image", attr: "thumb", label: false},

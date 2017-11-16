@@ -2,8 +2,7 @@
 <html>
 <head>  
 <title>Click&Eat | Home</title>
-    
-<!-- for-mobile-apps -->
+ <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Super Market Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -199,31 +198,40 @@ data-config="{'skin':'skins/tunes/skin.css','volume':80,'autoplay':true,'shuffle
 		</div>
 		
 <!-- //navigation -->
-	<!-- main-slider -->
-		<ul id="demo1">
-			<li>
-				<img src="images/11.jpg" alt="" />
-				<!--Slider Description example-->
-				<div class="slide-desc">
-					<h3>Ook Je Lunch Direct Thuisbezorgd</h3>
-				</div>
-			</li>
-			<li>
-				<img src="images/22.jpg" alt="" />
-				  <div class="slide-desc">
-					<h3>Nog Niks In Huis Voor Dat Feestje Vanavond? Shop Nu!</h3>
-				</div>
-			</li>
-			
-			<li>
-				<img src="images/44.jpg" alt="" />
-				<div class="slide-desc">
-					<h3>Ook Je Ontbijt Direct Thuisbezorgd</h3>
-				</div>
-			</li>
-		</ul>
-	<!-- //main-slider -->
-	<!-- //top-header and slider -->
+<!-- //top-header-->
+    
+<!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+          
+          <div class="item active">
+         <a href="#"> <img class="first-slide" src="images/carousel1.jpg" alt="First slide"></a>
+       
+        </div>         
+        <div class="item">
+         <a href="broodbakkerij.html"> <img class="second-slide" src="images/carousel2.jpg" alt="Second slide"></a>
+       
+        </div>
+        <div class="item">
+         <a href="fastfoodsalades-salades.html"> <img class="third-slide " src="images/carousel3.jpg" alt="Third slide"></a>
+         
+        </div>
+        <div class="item">
+          <a href="dranken-bier.html"><img class="third-slide " src="images/carousel4.jpg" alt="Fourth slide"></a>
+          
+        </div>
+      </div>
+    
+    </div>
+<!-- /.carousel -->	   
     
 <!-- uitgelicht -->
 	<div class="newproducts-w3agile">
@@ -239,18 +247,23 @@ data-config="{'skin':'skins/tunes/skin.css','volume':80,'autoplay':true,'shuffle
 								<div class="agile_top_brand_left_grid1">
 										<div class="simpleCart_shelfItem">
 											<div class="snipcart-thumb">
-												<a href="verse-koffie.html"><img class="item_thumb" src="images/d-wd-versekoffie.jpg" alt="Verse koffie"></a>		
+												<a href="#"><img class="item_thumb" src="images/d-wd-versekoffie.jpg" alt="Verse koffie"></a>		
 												<p class="item_name">Verse koffie</p>
-													<span class="item_price">€2.29</span> <br><br>
+													<span class="item_price">€2,29</span> <br><br>
 											</div>
-											<div>
+											<div class="aantalenbutton">
 												<form>
 													<fieldset>
-                                                        <input type="number" min="1" max="100" step="1" value="1" class="item_Quantity" style="width:53px;"> <br><br>
-                                                        <button class="button"><a class="item_add" href="javascript:;"> Plaats in winkelwagen </a></button>
+                                                        <p style="font-weight:normal; margin:0.3em">Aantal:</p>
+                                                        <input type="number" min="1" max="100" step="1" value="1" class="item_Quantity" style="width:53px"><br><br>
+                                                        <button class="button" onclick="ToegevoegdMelding()"><a class="item_add" href="javascript:;"> Plaats in winkelwagen </a></button>
 													</fieldset>
 												</form>
 											</div>
+                                            
+                                            <p id="toegevoegdtekst"></p>
+                                            <script> function ToegevoegdMelding() {document.getElementById("toegevoegdtekst").innerHTML = "Toegevoegd aan de winkelwagen!"; } </script>
+                                            
 										</div>
 								</div>
 							</div>
@@ -394,32 +407,32 @@ data-config="{'skin':'skins/tunes/skin.css','volume':80,'autoplay':true,'shuffle
 	</div>
 <!-- //uitgelicht -->
 
-<!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-         <a href="broodbakkerij.html"> <img class="first-slide" src="images/carousel1.jpg" alt="First slide"></a>
-       
-        </div>
-        <div class="item">
-         <a href="fastfoodsalades-salades.html"> <img class="second-slide " src="images/carousel2.jpg" alt="Second slide"></a>
-         
-        </div>
-        <div class="item">
-          <a href="dranken-bier.html"><img class="third-slide " src="images/carousel3.jpg" alt="Third slide"></a>
-          
-        </div>
-      </div>
+<!-- main-slider -->
+		<ul id="demo1">
+			<li>
+				<img src="images/11.jpg" alt="" />
+				<!--Slider Description example-->
+				<div class="slide-desc">
+					<h3>Ook Je Lunch Direct Thuisbezorgd</h3>
+				</div>
+			</li>
+			<li>
+				<img src="images/22.jpg" alt="" />
+				  <div class="slide-desc">
+					<h3>Nog Niks In Huis Voor Dat Feestje Vanavond? Shop Nu!</h3>
+				</div>
+			</li>
+			
+			<li>
+				<img src="images/44.jpg" alt="" />
+				<div class="slide-desc">
+					<h3>Ook Je Ontbijt Direct Thuisbezorgd</h3>
+				</div>
+			</li>
+		</ul>
+	<!-- //main-slider -->  
     
-    </div>
-<!-- /.carousel -->	
+    
     
 <!--banner-bottom-->
 				<div class="ban-bottom-w3l">
@@ -575,25 +588,5 @@ data-config="{'skin':'skins/tunes/skin.css','volume':80,'autoplay':true,'shuffle
 		});
 </script>	
 <!-- //main slider-banner --> 
-    
-<!-- Start of StatCounter Code for Default Guide -->
-<script type="text/javascript">
-var sc_project=11516251; 
-var sc_invisible=1; 
-var sc_security="92a34707"; 
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="Web Analytics"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11516251/0/92a34707/1/" alt="Web
-Analytics"></a></div></noscript>
-<!-- End of StatCounter Code for Default Guide -->
-    
-    
 </body>
 </html>

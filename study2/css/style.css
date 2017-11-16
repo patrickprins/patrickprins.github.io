@@ -9,11 +9,27 @@ ul li,ol li{
 p{
 	margin:0;
 }
-h1,h2,h3,h4,h5,h6,a{
-	font-family: 'Open Sans', sans-serif;
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Raleway', sans-serif;
 	margin:0;
 	font-weight:700;
 }
+
+button a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+/*-- de tekst die te zien is als de 'plaats in winkelwagen'-knop ingedrukt is --*/
+#toegevoegdtekst{
+    font-size: 12px;
+    color: #096639;
+}
+
+/*-- het onderste deel van een product-box: het aantal input, en de button om toe te voegen aan winkelwagen --*/
+.aantalenbutton{
+    text-align: center;
+    }
 
 ul,label{
 	margin:0;
@@ -35,10 +51,15 @@ span.glyphicon.glyphicon-shopping-cart.my-cart-icon.my-cart-icon-affix {
     width: 850px;
 	margin:75px auto 30px;
 }
+
+.snipcart-thumb{
+    height: 235px;
+    overflow: hidden;
+}
+
 .snipcart-thumb a {
     display: block;
     text-align: center;
-    padding: 1.5em;
     float: center;
 }
 .my-cart-icon-affix i {
@@ -47,6 +68,13 @@ span.glyphicon.glyphicon-shopping-cart.my-cart-icon.my-cart-icon-affix {
 .agile_top_brand_left_grid {
     position: relative;
     display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+.agile_top_brand_left_grid .item_price {
+    font-size: 25px;
+    font-weight: bold;
 }
 i.badge.badge-notify.my-cart-badge {
     font-style: normal;
@@ -379,7 +407,7 @@ ul.multi-column-dropdown h6 {
 }
 .agile_top_brand_left_grid1 p{
 	color:#212121;
-	margin:1.5em 0 1em;
+	margin: 0.7em;
 	line-height:1.5em;
 	font-size:15px;
     font-weight: bold;
@@ -3400,5 +3428,5 @@ td.invert-image a img {
 .w3agile_description p {
     font-size: 13px;
 }
-
+    
 }

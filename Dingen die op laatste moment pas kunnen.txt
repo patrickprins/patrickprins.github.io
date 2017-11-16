@@ -1,1 +1,3 @@
 - Van alle 3 studies, voor de zoekfunctie (Tipue Search), moeten de sites (afzonderlijk! Dus study 1 én 2 én 3) geïndexeerd worden door Beaty. Dat kan hier: http://www.tipue.com/beaty/ Dat levert content op, kopoieer die in een tekstbestand en noem het tipuesearch_content.js. MAAR BEDENK NOG: ik kan static doen of live
+- SCM Music player: liefst de script op alle pagina's, en ook de juiste link van juiste muziek.
+- Alle test-entries van de Cognito forms en alle mailtjes met testresultaten wissen.

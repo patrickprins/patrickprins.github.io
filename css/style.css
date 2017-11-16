@@ -8,7 +8,13 @@
 /*********************************************************************************/
 
 .cognito .c-forms-form{margin:0 auto;}
-
+.cognito .c-label label, .cognito .c-label{
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+#c-submit-button{
+    margin: 3em;
+}
 
 	body
 	{
@@ -1163,6 +1169,8 @@
 		background-size: cover;
 		background-position: center center;
 		padding: 14em 0 14em 0;
+        width: 100% !important;
+        height: 100% !important;
 		text-align: center;
 		color: #fff;
 	}
@@ -1224,7 +1232,7 @@
 	
 		.main > header
 		{
-			background: #fff;
+			background: #dbdbdb;
 			text-align: center;
 			padding: 5em 0 5em 0;
 			margin: 0;

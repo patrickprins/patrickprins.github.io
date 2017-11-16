@@ -1101,21 +1101,35 @@ textarea {
   line-height: inherit;
 }
 
+a {
+  color: #337ab7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .button{
-    background-color: #fe9126; /* Green */
+    background-color: #fe9126;
     border: none;
     color: white;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     padding: 10px 10px;
     text-transform: uppercase;
+    float: center;
+}
+
+.button:hover{
+    background-color: #d1751b;
+}
+
+button a{
+    color: white;
 }
 
 a:hover,
 a:focus {
-  color: #23527c;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:focus {
   outline: thin dotted;
@@ -1136,6 +1150,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-top: 2em;
 }
 .img-rounded {
   border-radius: 6px;
@@ -6658,5 +6673,6 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+
 }
 /*# sourceMappingURL=bootstrap.css.map */

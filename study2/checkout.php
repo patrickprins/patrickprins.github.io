@@ -23,6 +23,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/simpleCart.js"></script>
 <script src="js/theme.js"></script>
     
+<!-- css for Tipue Search -->
+<link rel="stylesheet" href="tipuesearch/css/tipuesearch.css">
+    
 <link href='//fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- start-smoth-scrolling -->
@@ -36,7 +39,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 	});
 </script>
-<!-- start-smoth-scrolling -->  
+<!-- start-smoth-scrolling -->
+    
 </head>
 	
 <body>
@@ -48,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="agile-login">
 				<ul>>
-					<li><a href="faq.html">Help</a></li>
+					<li><a href="faq.html" title="Volg dit scenario: 'Click&Eat is een nieuwe bezorgdienst van makkelijk eten en drinken bij u in de buurt. Ze beloven directe bezorging. Het is lunchtijd, u krijgt trek en besluit eens te kijken wat die nieuwe dienst te bieden heeft op hun webwinkel.' Als u tevreden bent met uw productkeuzes, gaat u naar de winkelwagen en klikt u op 'bevestigen'.">Help</a></li>
 					
 				</ul>
 			</div>
@@ -82,13 +86,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <a href="index.html"><img src="images/logo.png"></a>
 			</div>
 		<div class="w3l_search">
-			<form action="#" method="post">
-				<input type="search" name="Search" placeholder="Zoek een product..." required="">
-				<button type="submit" class="btn btn-default search" aria-label="Left Align">
-					<i class="fa fa-search" aria-hidden="true"> </i>
-				</button>
-				<div class="clearfix"></div>
-			</form>
+			<form action="search.html">
+                <div class="tipue_search_left"><img src="tipuesearch/search.png" class="tipue_search_icon"></div>
+                <div class="tipue_search_right"><input type="text" name="q" placeholder="Zoek een product..." id="tipue_search_input" pattern=".{3,}" title="...en druk op 'enter' om te zoeken." required></div>
+                <div style="clear: both;"></div>
+                </form>
 		</div>
 			
 			<div class="clearfix"> </div>
@@ -193,8 +195,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- breadcrumbs -->
 	<div class="breadcrumbs">
 		<div class="container">
-			<ol class="breadcrumb breadcrumb1">
-				<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+			<ol class="breadcrumb breadcrumb1 animated wow slideInLeft" data-wow-delay=".5s">
+				<li><a href="index.html" style="color: #fe9126"><span class="glyphicon glyphicon-home" aria-hidden="true" style="color: #fe9126"></span>Home</a></li>
 				<li class="active">Winkelwagen</li>
 			</ol>
 		</div>
@@ -203,22 +205,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- checkout -->
 	<div class="checkout">
 		<div class="container">
-			<h1>WINKELWAGEN</h1><br>           
-            <br>           
+			<h3 class="w3_agile_header">Winkelwagen</h3>
+
+            <br><br>           
             <div class="simpleCart_items" class="winkelwagentabel"></div>
             <div class="cartTotal">
                 <br><br>
                 <p>Totaalbedrag: </p><div class="simpleCart_total"></div>
                 </div>
                      <br><a href="javascript:;" class="simpleCart_checkout">Bevestigen</a>
-                                
-                                <?php
-                                $content = "some text here";
-                                $fp = fopen("myText.txt","wb");
-                                fwrite($fp,$content);
-                                fclose($fp);
-                                ?>
-            
          </div>                     
     </div>
 
@@ -239,9 +234,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Informatie</h3>
 					<ul class="info">
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="about.html">Over ons</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Over ons</a></li>
                         <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="faq.html">Vaakgestelde vragen</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="contact.html">Contact</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="#">Contact</a></li>
 						<!-- <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="short-codes.html">Short Codes</a></li> -->
 						<!-- <li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="products.html">Special Products</a></li> -->
 					</ul>
@@ -249,10 +244,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 w3_footer_grid">
 					<h3>Categorieën</h3>
 					<ul class="info"> 
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="groceries.html">Brood & bakkerij</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="household.html">Fastfood & salades</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="personalcare.html">Chips, koek, snoep & borrelhapjes</a></li>
-						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="packagedfoods.html">Dranken</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="broodbakkerij.html">Brood & bakkerij</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="fastfoodsalades.html">Fastfood & salades</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="cksb.html">Chips, koek, snoep & borrelhapjes</a></li>
+						<li><i class="fa fa-arrow-right" aria-hidden="true"></i><a href="dranken.html">Dranken</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 w3_footer_grid">

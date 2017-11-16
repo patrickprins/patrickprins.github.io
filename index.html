@@ -5,7 +5,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic" rel="stylesheet" type="text/css" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
@@ -17,6 +17,21 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+        
+        <!--random link generator-->
+        <script type="text/javascript">
+        function Randomlink() {
+            var urls = new Array();
+            urls[0] = "intro1.html";
+            urls[1] = "intro2.html";
+            urls[2] = "intro3.html";
+
+            var random = Math.floor(Math.random()*urls.length);
+            window.location = urls[random];
+            }
+        </script>
+        
+        
 	</head>
 	<body>
 
@@ -24,49 +39,12 @@
 			<section id="header" class="dark">
 				<header>
 					<h1>Onderzoek online koopgedrag en muziek</h1>
-					<p>door Patrick Prins, Universiteit Utrecht</a></p>
+					<p>door Patrick Prins, Universiteit Utrecht</p>
 				</header>
 				<footer>
-					<a href="#first" class="button scrolly">Volgende</a>
+					<a onClick=" Randomlink (); return(false)" class="button scrolly" target="_self">Begin</a>
 				</footer>
 			</section>
-			
-		<!-- First -->
-			<section id="first" class="main">
-				<header>
-					<div class="container">
-						<h2>Hartelijk dank voor uw deelname aan dit onderzoek!</h2>
-						<p>Ik ben een derdejaars student Informatiekunde aan de Universiteit Utrecht.
-						Voor mijn scriptie doe ik onderzoek naar de invloed van muziek op online koopgedrag. <br /><br />
-						Dit onderzoek zal er als volgt uit zien. Eerst volgt een korte vragenlijst, waarin u gevraagd wordt wat algemene vragen over uzelf te beantwoorden. 
-						Hierna wordt u verzocht om te winkelen in een gesimuleerde webshop, waarbij u winkelt alsof het een echte webshop is, maar geen daadwerkelijke aankopen zult doen. 
-						Verdere instructies hierover volgen nog. Tot slot wordt u wederom gevraagd enkele vragen te beantwoorden, ditmaal over de winkelervaring. Hierna is het onderzoek voltooid. 
-						Aan het eind van het onderzoek kunt u uw e-mailadres invullen om kans te maken op een Bol.com cadeaukaart ter waarde van €25.<br /><br />
-						Het onderzoek zal ongeveer 15 minuten duren. De resultaten worden anoniem en vertrouwelijk verwerkt, en worden niet voor andere doeleinden dan deze scriptie gebruikt.<br /><br />
-						Voor vragen en opmerkingen kunt u een e-mail sturen naar het volgende adres: p.s.prins2@students.uu.nl <br /><br /></p>
-						<footer>
-							<a href="#second" class="button scrolly">Begin</a>
-						</footer>						
-					</div>
-				</header>
-			</section>
-
-		<!-- Second -->
-			<section id="second" class="main">
-				<header>
-					<div class="container">
-					<!--	<script type="text/javascript" src="https://form.jotformeu.com/jsform/72982469349373"></script> -->
-					
-					<div class="cognito">
-						<script src="https://services.cognitoforms.com/s/MiHiomhXBUScXGl7uCR2fA"></script>
-						<script>Cognito.load("forms", { id: "1" });</script>						
-					</div>
-					
-					</div>
-				</header>
-			</section>
-			
-		
 
 		<!-- Basic Elements -->
 		<!--
@@ -239,16 +217,6 @@
 				</div>
 			</section>
 		-->
-		
-			
-		<!-- Footer -->
-			<section id="footer">
-				<div class="copyright">
-					<ul class="menu">
-						<li>&copy; Patrick Prins (2017).</li>
-					</ul>
-				</div>
-			</section>
 
 	</body>
 </html>
